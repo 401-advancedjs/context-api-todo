@@ -1,5 +1,5 @@
 import React from 'react';
-import App from '../component/App/App.js';
+import App from '../app';
 import renderer from 'react-test-renderer';
 
 describe('<App />', () => {

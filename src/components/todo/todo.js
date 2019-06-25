@@ -1,7 +1,9 @@
 import React from "react";
-import Counter from "../counter/counter.js";
-import { When } from "../if";
 import { RefactorContext } from '../context/context.js';
+
+import Counter from "../counter/counter.js";
+import Form from '../form/form.js';
+import List from '../list/list.js';
 
 import "./todo.scss";
 
@@ -14,43 +16,21 @@ class ToDo extends React.Component {
           <div>
             <Counter count={ this.context.todoList.length } />
           </div>
-
           <div>
-            <form onSubmit={ event => this.context.addItem(event) }>
-              <input
-                placeholder="Add To Do List Item"
-                onChange={ event => this.context.handleInputChange(event) }
-              />
-            </form>
+            <Form 
+            handleSubmit={ this.context.addItem } 
+            handleInputChange={ this.context.handleInputChange }
+            />
           </div>
-
           <div>
-            <ul>
-              { this.context.todoList &&
-                this.context.todoList.map(item => (
-                  <li
-                    className={`complete-${item.complete.toString()}`}
-                    key={item.id}
-                  >
-                    <span onClick={() => this.context.toggleComplete(item.id)}>
-                      {item.text}
-                    </span>
-                    <button onClick={() => this.context.toggleEdit(item.id)}>
-                      edit
-                    </button>
-                    <When condition={ this.context.editing === item.id }>
-                      <form onSubmit={ event => this.context.updateItem(event) }>
-                        <input
-                          onChange={ event => this.context.handleInputChange(event) }
-                          id={ item.id }
-                          complete={ item.complete }
-                          defaultValue={ item.text }
-                        />
-                      </form>
-                    </When>
-                  </li>
-                ))}
-            </ul>
+            <List 
+            todoList={ this.context.todoList } 
+            toggleComplete={ this.context.toggleComplete }
+            toggleEdit={ this.context.toggleEdit }
+            editing={ this.context.editing }
+            updateItem={ this.context.updateItem }
+            handleInputChange={ this.context.handleInputChange }
+             />
           </div>
         </section>
       </>
