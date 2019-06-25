@@ -4,8 +4,8 @@ import renderer from 'react-test-renderer';
 
 describe('<App />', () => {
   test('basic rendering', () => {
-    const mountedHeader = shallow(<App />);
-    expect(mountedHeader.find('App')).toBeTruthy();
+    const mountedApp = shallow(<App />);
+    expect(mountedApp.find('App')).toBeTruthy();
   });
 
   test('rendering follows the snapshot', () => {

@@ -1,9 +1,9 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Context-API ToDo List
 
-### Author: Student/Group Name
+### Author: Melissa Stock
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
