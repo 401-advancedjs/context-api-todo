@@ -1,47 +1,35 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Context-API ToDo List
 
-### Author: Student/Group Name
+### Author: Melissa Stock
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [submission PR](https://github.com/401-advancedjs/context-api-todo/pull/1)
+* [travis](https://www.travis-ci.com/401-advancedjs/context-api-todo)
+* [front-end](https://gallant-leavitt-fb9b7e.netlify.com)
 
-#### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
-
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+#### `app.js`
+#### `todo.js`
+#### `form.js`
+#### `list.js`
+#### `counter.js`
 
 #### Running the app
 * `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
   
 #### Tests
 * How do you run tests?
+  * `npm run test`
 * What assertions were made?
+  * basic rendering of all components
+  * functionality makes expected changes to state on all components
+  * rendering follows snapshot
 * What assertions need to be / should be made?
+  * none at the momment
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML](context-api-UML.png)

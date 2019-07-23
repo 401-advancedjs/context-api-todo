@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> rendering follows the snapshot 1`] = `
+<section
+  className="todo"
+>
+  <div>
+    <h2>
+      There are 
+      0
+       items in the list
+    </h2>
+  </div>
+  <div>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Add To Do List Item"
+      />
+    </form>
+  </div>
+  <div>
+    <ul />
+  </div>
+</section>
+`;
